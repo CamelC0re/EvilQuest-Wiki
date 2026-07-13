@@ -1,0 +1,9 @@
+{{#cargo_query:
+tables=ChestLoot
+|fields=Chest,Amount,Rate
+|where=Item="{{PAGENAME}}"
+|format=table
+|headers=Chest,Amount,Rate
+|intro===Chests==
+|default= 
+}}

@@ -1,0 +1,9 @@
+{{#cargo_query:
+tables=MobDropInventory
+|fields=Source,Amount,Rate
+|where=Item="{{PAGENAME}}"
+|format=table
+|headers=Source,Amount,Rate (%)
+|intro===Dropped by==
+|default= 
+}}

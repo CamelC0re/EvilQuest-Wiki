@@ -1,0 +1,11 @@
+<noinclude>{{/doc}}</noinclude>
+<div class="mainpage-discord tile-halves plainlinks">
+	<div class="tile-top">
+		<div class="partner-icon">[[File:Discord_logo_icon.png|60px|link=]]</div>
+		{{Clickable button 2|The EvilQuest Discord|url=https://discord.gg/R2b2UWxbS2|class=mw-ui-progressive discord-button}}
+		<div class="server-tagline">Join our server!</div>
+	</div>
+	<div class="tile-bottom">
+		<p>Join Discord</p>
+	</div>
+</div>

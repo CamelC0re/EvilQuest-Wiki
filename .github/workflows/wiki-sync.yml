@@ -1,0 +1,40 @@
+name: 🔄 MediaWiki Multi-Environment Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - 'modules/**'
+      - 'data/**'
+      - 'templates/**'
+      - 'styles/**'
+      - 'scripts/sync_to_wiki.py'
+
+jobs:
+  deploy_assets:
+    runs-on: ubuntu-latest
+    # Dynamically select environment tracking scopes based on Git branches
+    environment:
+      name: ${{ github.ref_name == 'main' && 'production' || 'development' }}
+    
+    steps:
+      - name: 📁 Checkout Repository Source Tree
+        uses: actions/checkout@v4
+
+      - name: 🐍 Initialize Python Execution Workspace
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install Runtime Transport Layer
+        run: pip install requests
+
+      - name: 🚀 Run Sync Engine Deployment Loop
+        env:
+          # GitHub automatically injects the correct variables below based on the Environment rules
+          WIKI_API_URL: ${{ secrets.WIKI_API_URL }}
+          WIKI_BOT_USERNAME: ${{ secrets.WIKI_BOT_USERNAME }}
+          WIKI_BOT_PASSWORD: ${{ secrets.WIKI_BOT_PASSWORD }}
+        run: python scripts/sync_to_wiki.py

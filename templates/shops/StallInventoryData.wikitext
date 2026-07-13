@@ -1,0 +1,8 @@
+<noinclude>
+{{#cargo_declare: _table = StallInventory
+| Stall = Page
+| Item = Page
+| Amount = Integer
+| Rate = String
+}}
+</noinclude>

@@ -1,0 +1,5 @@
+# Environment variables
+.env
+
+# Staging data
+staging/*.json

@@ -1,0 +1,8 @@
+<noinclude>
+{{#cargo_declare: _table = MobDropInventory
+| Source = Page
+| Item = Page
+| Amount = Integer
+| Rate = Float
+}}
+</noinclude>

@@ -1,0 +1,137 @@
+<noinclude>
+{{#cargo_declare:_table=Items
+|id=Integer
+|name=String
+|equipSlot=String
+|value=Integer
+|stabAttack=Integer
+|slashAttack=Integer
+|crushAttack=Integer
+}}
+</noinclude>
+
+<includeonly>
+<table class="wikitable" style="float: right; width: 330px; margin: 0 0 1em 1em; font-size: 90%; border-collapse: collapse; border: 1px solid #aaa; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
+  <tr>
+    <th colspan="2" style="background-color: #2e2e2e; color: white; text-align: center; font-size: 1.25em; padding: 6px;">{{PAGENAME}}</th>
+  </tr>
+  
+  <tr>
+    <td colspan="2" style="text-align: center; background: #1b1a1a; padding: 15px; border-bottom: 1px solid #eee;">
+      <div style="margin-bottom: 8px;">
+        [[File:Item_{{#invoke:ItemData|fetchItemData|field=id}}.png|140px|center|link=]]
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" style="text-align: center; background: #3a3a3a; font-style: italic; color: #ffffff; padding: 8px; border-bottom: 1px solid #ddd;">
+      {{#invoke:ItemData|fetchItemData|field=description}}
+    </td>
+  </tr>
+
+  <tr>
+    <th style="text-align: left; width: 45%; padding: 4px;">Item ID</th>
+    <td style="padding: 4px;">{{#invoke:ItemData|fetchItemData|field=id}}</td>
+  </tr>
+
+  <tr>
+    <th style="text-align: left; padding: 4px;">Stackable?</th>
+    <td style="padding: 4px;">{{#invoke:ItemData|fetchItemData|field=stackable}}</td>
+  </tr>
+
+  <tr>
+    <th style="text-align: left; padding: 4px;">Value</th>
+    <td style="padding: 4px;">{{#invoke:ItemData|fetchItemData|field=value}} coins</td>
+  </tr>
+
+  {{#if: {{#invoke:ItemData|fetchItemData|field=healAmount}} |
+  <tr>
+    <th colspan="2" style="background: #2e2e2e; text-align: center; font-weight: bold; padding: 4px;">Consumable Properties</th>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Heals HP</th>
+    <td style="padding: 4px; color: #008000; font-weight: bold;">{{#invoke:ItemData|fetchItemData|field=healAmount}} HP</td>
+  </tr>
+  }}
+
+  {{#if: {{#invoke:ItemData|fetchItemData|field=levelRequired}} |
+  <tr>
+    <th colspan="2" style="background: #e9e9e9; text-align: center; font-weight: bold; padding: 4px;">Requirements</th>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Required Skill</th>
+    <td style="padding: 4px; text-transform: capitalize;">{{#invoke:ItemData|fetchItemData|field=equipSkill}}</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Required Level</th>
+    <td style="padding: 4px;">{{#invoke:ItemData|fetchItemData|field=levelRequired}}</td>
+  </tr>
+  }}
+
+  {{#if: {{#invoke:ItemData|fetchItemData|field=equipSlot}} |
+  <tr>
+    <th colspan="2" style="background: #e9e9e9; text-align: center; font-weight: bold; padding: 4px;">Equipment Properties</th>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Equipment Slot</th>
+    <td style="padding: 4px; text-transform: capitalize;">{{#invoke:ItemData|fetchItemData|field=equipSlot}}</td>
+  </tr>
+  {{#if: {{#invoke:ItemData|fetchItemData|field=weaponStyle}} |
+  <tr>
+    <th style="text-align: left; padding: 4px;">Attack Style</th>
+    <td style="padding: 4px; text-transform: capitalize;">{{#invoke:ItemData|fetchItemData|field=weaponStyle}}</td>
+  </tr>
+  }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=attackSpeed}} |
+  <tr>
+    <th style="text-align: left; padding: 4px;">Attack Speed</th>
+    <td style="padding: 4px;">{{#invoke:ItemData|fetchItemData|field=attackSpeed}}</td>
+  </tr>
+  }}
+  }}
+
+  {{#if: {{#invoke:ItemData|fetchItemData|field=stabAttack}} {{#invoke:ItemData|fetchItemData|field=slashAttack}} {{#invoke:ItemData|fetchItemData|field=crushAttack}} {{#invoke:ItemData|fetchItemData|field=meleeStrength}} {{#invoke:ItemData|fetchItemData|field=magicAccuracy}} {{#invoke:ItemData|fetchItemData|field=rangedAccuracy}} {{#invoke:ItemData|fetchItemData|field=rangedStrength}} |
+  <tr>
+    <th colspan="2" style="background: #2e2e2e; text-align: center; font-weight: bold; padding: 4px;">Combat Bonuses (Offensive)</th>
+  </tr>
+  {{#if: {{#invoke:ItemData|fetchItemData|field=stabAttack}} | <tr><th style="text-align: left; padding: 4px;">Stab Attack</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=stabAttack}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=slashAttack}} | <tr><th style="text-align: left; padding: 4px;">Slash Attack</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=slashAttack}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=crushAttack}} | <tr><th style="text-align: left; padding: 4px;">Crush Attack</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=crushAttack}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=meleeStrength}} | <tr><th style="text-align: left; padding: 4px;">Melee Strength</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=meleeStrength}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=magicAccuracy}} | <tr><th style="text-align: left; padding: 4px;">Magic Accuracy</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=magicAccuracy}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=rangedAccuracy}} | <tr><th style="text-align: left; padding: 4px;">Ranged Accuracy</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=rangedAccuracy}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=rangedStrength}} | <tr><th style="text-align: left; padding: 4px;">Ranged Strength</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=rangedStrength}}</td></tr> }}
+  }}
+
+  {{#if: {{#invoke:ItemData|fetchItemData|field=stabDefence}} {{#invoke:ItemData|fetchItemData|field=slashDefence}} {{#invoke:ItemData|fetchItemData|field=crushDefence}} {{#invoke:ItemData|fetchItemData|field=rangedDefence}} {{#invoke:ItemData|fetchItemData|field=magicDefence}} |
+  <tr>
+    <th colspan="2" style="background: #e2e8f0; text-align: center; font-weight: bold; padding: 4px;">Combat Bonuses (Defensive)</th>
+  </tr>
+  {{#if: {{#invoke:ItemData|fetchItemData|field=stabDefence}} | <tr><th style="text-align: left; padding: 4px;">Stab Defence</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=stabDefence}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=slashDefence}} | <tr><th style="text-align: left; padding: 4px;">Slash Defence</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=slashDefence}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=crushDefence}} | <tr><th style="text-align: left; padding: 4px;">Crush Defence</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=crushDefence}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=rangedDefence}} | <tr><th style="text-align: left; padding: 4px;">Ranged Defence</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=rangedDefence}}</td></tr> }}
+  {{#if: {{#invoke:ItemData|fetchItemData|field=magicDefence}} | <tr><th style="text-align: left; padding: 4px;">Magic Defence</th><td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=magicDefence}}</td></tr> }}
+  }}
+
+  {{#if: {{#invoke:ItemData|fetchItemData|field=toolType}} |
+  <tr>
+    <th colspan="2" style="background: #e9e9e9; text-align: center; font-weight: bold; padding: 4px;">Tool Properties</th>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Tool Designation</th>
+    <td style="padding: 4px; text-transform: capitalize;">{{#invoke:ItemData|fetchItemData|field=toolType}}</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Skill Level Tool Req.</th>
+    <td style="padding: 4px;">Level {{#invoke:ItemData|fetchItemData|field=toolLevel}}</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 4px;">Extraction Efficiency Bonus</th>
+    <td style="padding: 4px;">+{{#invoke:ItemData|fetchItemData|field=toolBonus}}</td>
+  </tr>
+  }}
+</table>
+<includeonly>[[Category:Items]]</includeonly>
+</includeonly>

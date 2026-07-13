@@ -1,0 +1,9 @@
+{{#cargo_query:
+tables=StallInventory
+|fields=Stall,Amount,Rate
+|where=Item="{{PAGENAME}}"
+|format=table
+|headers=Stall,Amount,Rate
+|intro===Stalls==
+|default= 
+}}

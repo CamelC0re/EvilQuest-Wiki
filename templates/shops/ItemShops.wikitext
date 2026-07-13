@@ -1,0 +1,8 @@
+{{#cargo_query:
+tables=ShopInventory
+|fields=Shop,Price,Stock
+|where=Item="{{PAGENAME}}"
+|format=table
+|intro===Shops==
+|default= 
+}}

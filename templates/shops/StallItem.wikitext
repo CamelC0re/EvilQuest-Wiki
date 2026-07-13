@@ -1,0 +1,10 @@
+|-
+| [[{{{Item}}}]]
+| {{{Amount}}}
+| {{{Rate}}}%
+<includeonly>{{#cargo_store:_table=StallInventory
+|Stall={{PAGENAME}}
+|Item={{{Item}}}
+|Amount={{{Amount}}}
+|Rate={{{Rate}}}%
+}}</includeonly>

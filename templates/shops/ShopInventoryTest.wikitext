@@ -1,0 +1,7 @@
+<includeonly>{{#cargo_store:
+_table=ShopInventoryTest
+|Shop={{PAGENAME}}
+|Item={{{Item|}}}
+|Price={{{Price|}}}
+|Stock={{{Stock|}}}
+}}</includeonly>

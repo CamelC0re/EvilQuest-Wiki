@@ -1,0 +1,21 @@
+<div class="mainpage-popular tile-halves">
+    <div class="tile-top">
+        <div class="popular-pages plainlist">
+            <h2>Popular pages</h2>
+            <ul>
+                <li class="mp-popular-page-light">[[Experience]]</li>
+                <li class="mp-popular-page-light">[[Money Making Guide]]</li>
+                <li class="mp-popular-page-light">[[Mining]]</li>
+                <li class="mp-popular-page-light">[[Elder Vampire]]</li>
+                <li class="mp-popular-page-light">[[Mother Spider]]</li>
+                <li class="mp-popular-page-light">[[The Desert]]</li>
+                <li class="mp-popular-page-light">[[Central Mine]]</li>
+                <li class="mp-popular-page-light">[[Wibergis]]</li>
+                <li class="mp-popular-page-light">[[Amulet of Power]]</li>
+                <li class="mp-popular-page-light">[[Malachite Ore]]</li>
+                <li class="mp-popular-page-light">[[Steel Bar]]</li>
+                <li class="mp-popular-page-light">[[Karim (Shopkeeper)]]</li>
+            </ul>
+        </div>
+    </div>
+</div>

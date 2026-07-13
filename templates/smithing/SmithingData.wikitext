@@ -1,0 +1,9 @@
+<noinclude>
+{{#cargo_declare: _table = Smithing
+| Source = Page
+| Item = Page
+| Level = Integer
+| BarsNeeded = Integer
+| XP = Integer
+}}
+</noinclude>

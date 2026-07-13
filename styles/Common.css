@@ -1,0 +1,868 @@
+/* ===========================================
+   EvilQuest Wiki - Common.css
+   Colors:
+     Background:  #161414
+     Subtle bg:   #1e1b1b
+     Red (main):  #d7372c
+     Red (dark):  #8b1a14
+     Red (light): #e8665e
+     Red (muted): #5c1a15
+     Text:        #e6e6e6
+   =========================================== */
+
+body {
+    font-size: 20px !important;
+}
+
+
+
+/* -------------------------------------------
+   BACKGROUNDS
+   ------------------------------------------- */
+
+body {
+    background: linear-gradient(#000000b8, #000000db), url(/images/stone-bg.png);
+}
+
+#content,
+.mw-body,
+#mw-content-text,
+.mw-parser-output,
+#mw-footer,
+#p-views,
+#p-namespaces {
+    background-color: #161414;
+}
+
+#mw-head {
+    background: linear-gradient(#000000b8, #000000b8), url(/images/stone-bg.png) !important;
+    background-attachment: fixed;
+}
+
+.vector-header-container,
+#left-navigation,
+#right-navigation,
+.vector-menu-tabs-legacy,
+#p-views,
+#p-namespaces,
+#mw-head .vector-menu-tabs-legacy,
+#mw-head #left-navigation {
+    background-color: #161414 !important;
+}
+
+/* Tab backgrounds — !important needed to override Vector Legacy gradient */
+#p-views li,
+#p-namespaces li,
+.vector-menu-content li,
+#p-views .mw-list-item,
+#p-namespaces .mw-list-item,
+.vector-menu-tabs-legacy li {
+    background: transparent !important;
+}
+
+
+/* Active tab */
+#p-views li.selected a,
+#p-namespaces li.selected a {
+    background-color: transparent;
+    color: #e6e6e6;
+}
+
+
+/* -------------------------------------------
+   TEXT
+   ------------------------------------------- */
+
+.mw-body,
+.mw-body-content,
+#mw-content-text,
+.firstHeading,
+#footer-info,
+#footer-info li,
+.mw-heading1 h1,
+.mw-heading2 h2,
+.mw-heading3 h3,
+.mw-heading4 h4,
+.mw-heading5 h5 {
+    color: #e6e6e6 !important;
+}
+
+/* Sidebar section heading */
+.vector-legacy-sidebar .vector-menu-portal .vector-menu-heading {
+    color: #e6e6e6;
+}
+
+
+/* -------------------------------------------
+   LINKS
+   ------------------------------------------- */
+
+a,
+a:link {
+    color: #d8372b !important;
+}
+
+a:visited {
+    color: #d8372b !important;
+}
+
+a:hover,
+a:focus {
+    color: #e8665e !important;
+}
+
+/* Tab link colors */
+#p-views li a,
+#p-namespaces li a,
+.vector-menu-content li a {
+    color: #d8372b;
+}
+
+#p-views li.selected a,
+#p-namespaces li.selected a {
+    color: #e6e6e6;
+}
+
+#catlinks {
+    background: #161414;
+    border-color: #d8372b;
+}
+
+/* -------------------------------------------
+   BORDERS & DIVIDERS
+   ------------------------------------------- */
+
+/* Content area border */
+.mw-body {
+    border-color: #666666;
+}
+
+/* Heading underlines */
+.firstHeading,
+.mw-heading2 {
+    border-bottom: 1px solid #666666;
+}
+
+.mw-heading3,
+.mw-heading4,
+.mw-heading5,
+.mw-heading6 {
+    border-bottom: none;
+}
+
+/* Tab borders */
+#p-views .mw-list-item,
+#p-namespaces .mw-list-item {
+    border-color: #666666;
+    box-shadow: none;
+}
+
+/* Tab side gradient border */
+.vector-menu-tabs,
+.vector-menu-tabs a,
+#mw-head .vector-menu-dropdown .vector-menu-heading {
+    background-image: linear-gradient(to bottom, #161414 0, #666666 100%);
+    border-color: #666666 !important;
+    outline-color: #666666 !important;
+}
+
+/* Sidebar heading divider */
+.vector-legacy-sidebar .vector-menu-portal .vector-menu-heading {
+    background-image: linear-gradient(to right, rgba(139, 26, 20, 0) 0, #666666 33%, #2b2b2b 66%, rgba(139, 26, 20, 0) 100%);
+}
+
+
+/* -------------------------------------------
+   SEARCH BAR
+   ------------------------------------------- */
+
+.vector-search-box-input,
+.vector-search-box-input:focus {
+    background-color: #161414;
+    color: #d7372c;
+    border-color: #d7372c;
+    outline-color: #d7372c;
+}
+
+.vector-search-box-input::placeholder {
+    color: #5c1a15;
+}
+
+#searchButton {
+    background-color: #161414;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='8' cy='8' r='5' stroke='%23d7372c' stroke-width='2' fill='none'/%3E%3Cline x1='12' y1='12' x2='17' y2='17' stroke='%23d7372c' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    border-color: #d7372c;
+    color: #d7372c;
+}
+
+
+/* -------------------------------------------
+   FOOTER
+   ------------------------------------------- */
+
+#footer-icons {
+    display: none;
+}
+
+
+/* ============================= */
+/* GOOGLE FONTS IMPORT */
+/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Amarante&display=swap');
+
+
+/* ============================= */
+/* BODY FONT (ALL CONTENT) */
+/* ============================= */
+
+body,
+.mw-body,
+.mw-parser-output {
+    font-family: "Amarante", serif !important;
+}
+
+/* Ensure content inherits properly */
+.mw-body * {
+    font-family: inherit !important;
+}
+
+
+/* ============================= */
+/* HEADERS FONT */
+/* ============================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cinzel", serif !important;
+}
+
+
+/* ============================= */
+/* LINKS (KEEP CONSISTENT TEXT FONT) */
+/* ============================= */
+
+a {
+    font-family: inherit !important;
+}
+
+
+/* Item Infobox */
+
+#wikitable {
+    border-color: #d7372c;
+}
+
+
+/* ================================ */
+/* ================================ */
+/* =========MAIN PAGE WRAP========= */
+/* ================================ */
+/* ================================ */
+
+/* Fixed-width box everything on the main page sits inside.
+   On screens narrower than 1240px, the whole box "zooms out"
+   in steps so nothing reflows or moves - it just gets smaller. */
+.eq-mainpage-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ================================ */
+/* =======NAVIGATION CARDS======== */
+/* ================================ */
+
+.eq-card-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5vw;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 0 1.5vw 0;
+    box-sizing: border-box;
+}
+
+.eq-card {
+    border: 1px solid #666;
+    background: #1f1f1f;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+}
+
+.eq-card a.image,
+.eq-card .thumb,
+.eq-card .thumbinner,
+.eq-card .mw-default-size {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+}
+
+.eq-card img,
+.eq-card .mw-file-element {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.35s ease;
+}
+
+.eq-card:hover img {
+    transform: scale(1.1);
+}
+
+.eq-card-label {
+    border-top: 1px solid #666;
+    padding: 10px 0;
+    background: #242424;
+    font-family: "Cinzel", serif;
+    font-size: clamp(10px, 1.8vw, 22px);
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================================ */
+/* ================================ */
+/* ========MAIN PAGE BANNER======= */
+/* ================================ */
+/* ================================ */
+
+.eq-banner {
+    display: block;
+    width: 100%;
+    margin: 0 0 1.5vw 0;
+    border: 1px solid #666;
+
+    overflow: hidden;
+    position: relative;
+
+    line-height: 0;
+    font-size: 0;
+}
+
+/* Kill MediaWiki wrapper spacing */
+.eq-banner a.image,
+.eq-banner .thumb,
+.eq-banner .thumbinner,
+.eq-banner .mw-default-size {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+}
+
+/* Image reset (NO CROPPING, NO INLINE GAP) */
+.eq-banner img,
+.eq-banner .mw-file-element {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: top;
+
+    transition: transform 0.4s ease;
+}
+
+/* Hover zoom */
+.eq-banner:hover img {
+    transform: scale(1.03);
+}
+
+/* ================================ */
+/* ================================ */
+/* ===========Tabber System=========== */
+/* ================================ */
+/* ================================ */
+.npc-tab-container {
+    float: right;
+    width: 300px;
+    margin: 0 0 1em 1em;
+}
+
+.npc-tab-buttons {
+    display: flex;
+    gap: 3px;
+    margin-bottom: -1px;
+    width: 100%;
+}
+
+.npc-tab-button {
+    background: #e2e8f0;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    padding: 6px 4px;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: bold;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    flex-grow: 1;
+    text-align: center;
+    transition: background 0.15s ease;
+}
+
+.npc-tab-button:hover {
+    background: #cbd5e1;
+}
+
+.npc-tab-button.active {
+    background: #5c1d1d;
+    color: white;
+    border-color: #5c1d1d;
+}
+
+.npc-tab-content {
+    display: none;
+}
+
+.npc-tab-content.active {
+    display: block;
+}
+
+
+.xp-table {
+    border-collapse: separate !important;
+    border-spacing: 0 10px !important;
+    /* vertical gap = 10px */
+}
+
+.xp-table td,
+.xp-table th {
+    padding: 6px 12px;
+}
+
+/* wrapper holds all 4 tables in a row */
+.xp-wrap {
+    display: flex;
+    gap: 20px;
+    /* spacing between tables */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* allows mobile stacking */
+}
+
+/* each individual table */
+.xp-col {
+    width: auto;
+    min-width: 220px;
+}
+
+
+/* ================================ */
+/* ================================ */
+/* ========POPULAR PAGES ========== */
+/* ================================ */
+/* ================================ */
+
+.popular-pages {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popular-pages ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-pages li {
+    list-style: none;
+}
+
+.mp-popular-page-light {
+    display: flex;
+    align-items: center;
+    background: #242424;
+    border-radius: 4px;
+}
+
+.mp-popular-page-light a {
+    flex: 1;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+}
+
+
+/* ================================ */
+/* ================================ */
+/* =====MAIN ROW (MAP + BUTTONS)=== */
+/* ================================ */
+/* ================================ */
+
+.eq-main-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 0 1.5vw 0;
+    box-sizing: border-box;
+}
+
+/* LEFT SIDE (world map) - takes remaining space after button stack */
+.eq-banner-auto {
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    border: 1px solid #666;
+
+    overflow: hidden;
+    position: relative;
+
+    line-height: 0;
+    font-size: 0;
+}
+
+.eq-banner-auto a.image,
+.eq-banner-auto .thumb,
+.eq-banner-auto .thumbinner,
+.eq-banner-auto .mw-default-size {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+}
+
+.eq-banner-auto img,
+.eq-banner-auto .mw-file-element {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transition: transform 0.4s ease;
+}
+
+.eq-banner-auto:hover img {
+    transform: scale(1.03);
+}
+
+.eq-button-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    flex: 0 0 25%;
+    width: 25%;
+    align-items: stretch;
+    align-self: stretch;
+}
+
+.eq-button-stack img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+
+.eq-button-wrap {
+    width: 100%;
+}
+
+.eq-button-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ================================ */
+/* ================================ */
+/* ===========WIKITABLE============ */
+/* ================================ */
+/* ================================ */
+
+.wikitable {
+    background-color: #161414 !important;
+    color: #e6e6e6 !important;
+    border-radius: 6px;
+    border: 2px solid #161414 !important;
+    overflow: hidden;
+    border-collapse: collapse !important;
+}
+
+.wikitable>tr>th,
+.wikitable>*>tr>th {
+    background-color: #2b1212 !important;
+    color: #e6e6e6 !important;
+    font-weight: bold !important;
+    border: 2px solid #5c1a15 !important;
+    font-family: "Cinzel", serif !important;
+    text-align: left;
+    padding: 8px 12px;
+}
+
+.wikitable>tr>td,
+.wikitable>*>tr>td {
+    color: #e6e6e6 !important;
+    border: 2px solid #333030 !important;
+    padding: 8px 12px;
+}
+
+/* Zebra striping */
+.wikitable>tbody>tr:nth-child(even) {
+    background-color: #1c1b1b;
+}
+
+.wikitable>tbody>tr:nth-child(odd) {
+    background-color: #1b1a1a;
+}
+
+/* Hover highlight */
+.wikitable>tbody>tr:hover {
+    background-color: #3a1a16 !important;
+    transition: background-color 0.15s ease;
+}
+
+/* Center all columns after the first */
+.wikitable th:not(:first-child),
+.wikitable td:not(:first-child) {
+    text-align: center;
+}
+
+/* Rounded corners on outer edges */
+.wikitable th:first-child {
+    border-top-left-radius: 6px;
+}
+
+.wikitable th:last-child {
+    border-top-right-radius: 6px;
+}
+
+.wikitable tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+.wikitable tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+
+
+/* ================================ */
+/* ================================ */
+/* ========"CONTENTS" BOX========= */
+/* ================================ */
+/* ================================ */
+
+.toc,
+#toc {
+    background-color: #1b1a1a !important;
+    border: 2px solid #161414 !important;
+    border-radius: 12px;
+}
+
+.toc .toctitle,
+#toc .toctitle,
+.toc .toctitle h2,
+#toc .toctitle h2 {
+    color: #e6e6e6 !important;
+}
+
+.toc .tocnumber,
+#toc .tocnumber {
+    color: #d8372b !important;
+}
+
+.toc a,
+#toc a,
+.toc a:link,
+#toc a:link,
+.toc a:visited,
+#toc a:visited {
+    color: #d8372b !important;
+}
+
+#toc #togglelink,
+.toc #togglelink,
+.toctoggle,
+.toctoggle a {
+    color: #d8372b !important;
+}
+
+.toctogglelabel,
+.toctogglelabel a,
+#toc .toctogglelabel,
+.toc .toctogglelabel {
+    color: #d8372b !important;
+}
+
+
+
+/* ================================ */
+/* ================================ */
+/* =========THUMB COLOR========== */
+/* ================================ */
+/* ================================ */
+
+div.thumbinner,
+div.thumb {
+    background-color: #1b1a1a !important;
+    border: none !important;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+div.thumbinner img,
+div.thumb img {
+    border-radius: 6px 6px 0 0;
+}
+
+figcaption,
+.thumbcaption {
+    background-color: #1b1a1a !important;
+    color: #e6e6e6 !important;
+    border: none !important;
+}
+
+.thumbinner img,
+.thumb img {
+    border: none !important;
+}
+
+.thumbinner a,
+.thumbinner a img,
+.image img {
+    border: none !important;
+}
+
+.mw-file-element {
+    border: none !important;
+}
+
+figure.mw-halign-right,
+figure[typeof~="mw:File/Thumb"] {
+    background-color: #1b1a1a !important;
+    border: none !important;
+    overflow: hidden;
+}
+
+figure[typeof~="mw:File/Thumb"] a.mw-file-description,
+figure[typeof~="mw:File/Thumb"] img {
+    border: none !important;
+}
+
+figcaption {
+    background-color: #1b1a1a !important;
+    color: #e6e6e6 !important;
+    border: none !important;
+}
+
+
+
+/* ================================ */
+/* ================================ */
+/* =========CARGO VISUAL========== */
+/* ================================ */
+/* ================================ */
+.mw-special-CargoTables,
+.mw-special-CargoTables table,
+.mw-special-CargoTables th,
+.mw-special-CargoTables td {
+    background-color: #cdcdcd !important;
+    color: #1e1e1e !important;
+}
+
+.cargoTable {
+    background-color: #161414 !important;
+    color: #e6e6e6 !important;
+    border-radius: 6px;
+    border: 2px solid #161414 !important;
+    overflow: hidden;
+    border-collapse: collapse !important;
+}
+
+.cargoTable th {
+    background-color: #2b1212 !important;
+    color: #e6e6e6 !important;
+    font-weight: bold !important;
+    border: 2px solid #5c1a15 !important;
+    font-family: "Cinzel", serif !important;
+    text-align: left;
+    padding: 8px 12px;
+}
+
+.cargoTable tbody td.field_Shop,
+.cargoTable tbody td.field_Price,
+.cargoTable tbody td.field_Stock,
+.cargoTable tbody td {
+    background-color: #1b1a1a !important;
+    color: #e6e6e6 !important;
+    border: 2px solid #333030 !important;
+    padding: 8px 12px;
+}
+
+.cargoTable tbody tr:nth-child(even) td {
+    background-color: #1c1b1b !important;
+}
+
+.cargoTable tbody tr:hover td {
+    background-color: #3a1a16 !important;
+    transition: background-color 0.15s ease;
+}
+
+.cargoTable th:not(:first-child),
+.cargoTable td:not(:first-child) {
+    text-align: center;
+}
+
+
+/* ================================ */
+/* ================================ */
+/* =====INFOBOX IMAGE BG COLOR=== */
+/* ================================ */
+/* ================================ */
+
+.infobox {
+    background-color: #1b1a1a !important;
+}
+
+
+.wikitable>*>tr>td[colspan="2"] {
+    background-color: unset !important;
+}

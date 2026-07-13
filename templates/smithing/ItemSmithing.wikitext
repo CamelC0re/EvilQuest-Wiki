@@ -1,0 +1,9 @@
+{{#cargo_query:
+tables=Smithing
+|fields=Source,Level,BarsNeeded,XP
+|where=Item="{{PAGENAME}}"
+|format=table
+|headers=Source,Level,Bars Needed,XP
+|intro===Smithing==
+|default=
+}}

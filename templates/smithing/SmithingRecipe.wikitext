@@ -1,0 +1,11 @@
+|-
+| [[{{{Item}}}]]
+| {{{Level}}}
+| {{{BarsNeeded}}}
+| {{{XP}}}<includeonly>{{#cargo_store:_table=Smithing
+|Source={{PAGENAME}}
+|Item={{{Item}}}
+|Level={{{Level}}}
+|BarsNeeded={{{BarsNeeded}}}
+|XP={{{XP}}}
+}}</includeonly>

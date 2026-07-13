@@ -1,0 +1,8 @@
+<noinclude>
+{{#cargo_declare: _table = ShopInventoryTest
+| Shop = Page
+| Item = Page
+| Price = Integer
+| Stock = Integer
+}}
+</noinclude>
