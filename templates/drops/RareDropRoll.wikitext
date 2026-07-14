@@ -1,0 +1,7 @@
+There is a {{{Chance}}} chance of rolling the [[Rare drop table|{{{Table}}}]].
+<includeonly>{{#cargo_store:_table=MobDropInventory
+|Source={{PAGENAME}}
+|Item=Rare drop table
+|Amount=1
+|Rate={{#iferror: {{#expr: {{{Chance}}} + 0 }} | | {{{Chance}}} }}
+}}</includeonly>

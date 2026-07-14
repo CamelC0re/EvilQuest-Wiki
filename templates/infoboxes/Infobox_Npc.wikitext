@@ -3,59 +3,59 @@
     <th colspan="2" style="background-color: #5c1d1d; color: white; text-align: center; font-size: 1.25em; padding: 6px;">{{PAGENAME}}</th>
   </tr>
   
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=examineText}} |
+  {{#if: {{{examineText|{{#invoke:NPCData|fetchNpcData|field=examineText}}}}} |
   <tr>
     <td colspan="2" style="text-align: center; background: #f9f9f9; font-style: italic; padding: 8px; border-bottom: 1px solid #ddd;">
-      "{{#invoke:NPCData|fetchNpcData|field=examineText}}"
+      "{{{examineText|{{#invoke:NPCData|fetchNpcData|field=examineText}}}}}"
     </td>
   </tr>
   }}
 
   <tr>
     <th style="text-align: left; width: 45%; padding: 4px;">NPC ID</th>
-    <td style="padding: 4px;">{{#invoke:NPCData|fetchNpcData|field=id}}</td>
+    <td style="padding: 4px;">{{{id|{{#invoke:NPCData|fetchNpcData|field=id}}}}}</td>
   </tr>
 
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=combatLevel}} |
+  {{#if: {{{combatLevel|{{#invoke:NPCData|fetchNpcData|field=combatLevel}}}}} |
   <tr>
     <th style="text-align: left; padding: 4px;">Combat Level</th>
-    <td style="padding: 4px;">{{#invoke:NPCData|fetchNpcData|field=combatLevel}}</td>
+    <td style="padding: 4px;">{{{combatLevel|{{#invoke:NPCData|fetchNpcData|field=combatLevel}}}}}</td>
   </tr>
   }}
 
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=hasShop}} |
+  {{#if: {{{hasShop|{{#invoke:NPCData|fetchNpcData|field=hasShop}}}}} |
   <tr>
     <th style="text-align: left; padding: 4px;">Has Shop?</th>
-    <td style="padding: 4px;">{{#invoke:NPCData|fetchNpcData|field=hasShop}}</td>
+    <td style="padding: 4px;">{{{hasShop|{{#invoke:NPCData|fetchNpcData|field=hasShop}}}}}</td>
   </tr>
   }}
 
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=health}} {{#invoke:NPCData|fetchNpcData|field=attack}} {{#invoke:NPCData|fetchNpcData|field=defence}} |
+  {{#if: {{{health|{{#invoke:NPCData|fetchNpcData|field=health}}}}} {{{attack|{{#invoke:NPCData|fetchNpcData|field=attack}}}}} {{{defence|{{#invoke:NPCData|fetchNpcData|field=defence}}}}} |
   <tr>
     <th colspan="2" style="background: #e2e8f0; text-align: center; font-weight: bold; padding: 4px;">Legacy Combat Stats</th>
   </tr>
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=health}} |
+  {{#if: {{{health|{{#invoke:NPCData|fetchNpcData|field=health}}}}} |
   <tr>
     <th style="text-align: left; padding: 4px;">Hitpoints</th>
-    <td style="padding: 4px; color: #cc0000; font-weight: bold;">{{#invoke:NPCData|fetchNpcData|field=health}} HP</td>
+    <td style="padding: 4px; color: #cc0000; font-weight: bold;">{{{health|{{#invoke:NPCData|fetchNpcData|field=health}}}}} HP</td>
   </tr>
   }}
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=attack}} |
+  {{#if: {{{attack|{{#invoke:NPCData|fetchNpcData|field=attack}}}}} |
   <tr>
     <th style="text-align: left; padding: 4px;">Attack / Str</th>
-    <td style="padding: 4px;">Level {{#invoke:NPCData|fetchNpcData|field=attack}} / {{#invoke:NPCData|fetchNpcData|field=strength}}</td>
+    <td style="padding: 4px;">Level {{{attack|{{#invoke:NPCData|fetchNpcData|field=attack}}}}} / {{{strength|{{#invoke:NPCData|fetchNpcData|field=strength}}}}}</td>
   </tr>
   }}
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=defence}} |
+  {{#if: {{{defence|{{#invoke:NPCData|fetchNpcData|field=defence}}}}} |
   <tr>
     <th style="text-align: left; padding: 4px;">Defence</th>
-    <td style="padding: 4px;">Level {{#invoke:NPCData|fetchNpcData|field=defence}}</td>
+    <td style="padding: 4px;">Level {{{defence|{{#invoke:NPCData|fetchNpcData|field=defence}}}}}</td>
   </tr>
   }}
-  {{#if: {{#invoke:NPCData|fetchNpcData|field=attackSpeed}} |
+  {{#if: {{{attackSpeed|{{#invoke:NPCData|fetchNpcData|field=attackSpeed}}}}} |
   <tr>
     <th style="text-align: left; padding: 4px;">Attack Speed</th>
-    <td style="padding: 4px;">{{#invoke:NPCData|fetchNpcData|field=attackSpeed}} ticks</td>
+    <td style="padding: 4px;">{{{attackSpeed|{{#invoke:NPCData|fetchNpcData|field=attackSpeed}}}}} ticks</td>
   </tr>
   }}
   }}

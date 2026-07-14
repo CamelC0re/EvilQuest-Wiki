@@ -21,7 +21,7 @@
     "crushDefence": 5,
     "rangedDefence": 6,
     "value": 30,
-    "bodyHideStyle": "rangedShoulders",
+    "bodyHideStyle": "leather",
     "model": "/assets/equipment/body/LeatherBody.glb"
   },
   {
@@ -201,7 +201,8 @@
     "crushAttack": 3,
     "meleeStrength": 4,
     "magicAccuracy": 3,
-    "value": 200
+    "value": 200,
+    "model": "/assets/equipment/neck/SapphireAmuletString.glb"
   },
   {
     "id": 23,
@@ -878,7 +879,15 @@
     "slashDefence": 4,
     "crushDefence": 2,
     "equipSkill": "defence",
-    "levelRequired": 1
+    "levelRequired": 1,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 66,
@@ -894,7 +903,8 @@
     "slashDefence": 6,
     "crushDefence": 4,
     "equipSkill": "defence",
-    "levelRequired": 1
+    "levelRequired": 1,
+    "headRenderMode": "helmet"
   },
   {
     "id": 67,
@@ -989,7 +999,8 @@
     "crushDefence": 12,
     "rangedDefence": 14,
     "equipSkill": "defence",
-    "levelRequired": 1
+    "levelRequired": 1,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 72,
@@ -1111,7 +1122,15 @@
     "slashDefence": 6,
     "crushDefence": 3,
     "equipSkill": "defence",
-    "levelRequired": 6
+    "levelRequired": 6,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 80,
@@ -1127,7 +1146,8 @@
     "slashDefence": 9,
     "crushDefence": 6,
     "equipSkill": "defence",
-    "levelRequired": 6
+    "levelRequired": 6,
+    "headRenderMode": "helmet"
   },
   {
     "id": 81,
@@ -1222,7 +1242,8 @@
     "crushDefence": 18,
     "rangedDefence": 21,
     "equipSkill": "defence",
-    "levelRequired": 6
+    "levelRequired": 6,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 86,
@@ -1344,7 +1365,15 @@
     "crushDefence": 4,
     "model": "/assets/equipment/head/SteelMedHelm.glb",
     "equipSkill": "defence",
-    "levelRequired": 15
+    "levelRequired": 15,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 94,
@@ -1360,7 +1389,8 @@
     "crushDefence": 8,
     "model": "/assets/equipment/head/SteelFullHelm.glb",
     "equipSkill": "defence",
-    "levelRequired": 15
+    "levelRequired": 15,
+    "headRenderMode": "helmet"
   },
   {
     "id": 95,
@@ -1455,7 +1485,8 @@
       "1": "/assets/equipment/body/female/SteelPlatebodyWoman.glb"
     },
     "equipSkill": "defence",
-    "levelRequired": 15
+    "levelRequired": 15,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 100,
@@ -1577,7 +1608,15 @@
     "slashDefence": 16,
     "crushDefence": 8,
     "equipSkill": "defence",
-    "levelRequired": 35
+    "levelRequired": 35,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 108,
@@ -1593,7 +1632,8 @@
     "slashDefence": 24,
     "crushDefence": 16,
     "equipSkill": "defence",
-    "levelRequired": 35
+    "levelRequired": 35,
+    "headRenderMode": "helmet"
   },
   {
     "id": 109,
@@ -1688,7 +1728,8 @@
     "crushDefence": 48,
     "rangedDefence": 56,
     "equipSkill": "defence",
-    "levelRequired": 35
+    "levelRequired": 35,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 114,
@@ -1803,7 +1844,15 @@
     "slashDefence": 12,
     "crushDefence": 6,
     "equipSkill": "defence",
-    "levelRequired": 25
+    "levelRequired": 25,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 122,
@@ -1818,7 +1867,8 @@
     "slashDefence": 18,
     "crushDefence": 12,
     "equipSkill": "defence",
-    "levelRequired": 25
+    "levelRequired": 25,
+    "headRenderMode": "helmet"
   },
   {
     "id": 123,
@@ -1908,7 +1958,8 @@
     "crushDefence": 36,
     "rangedDefence": 42,
     "equipSkill": "defence",
-    "levelRequired": 25
+    "levelRequired": 25,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 142,
@@ -1986,7 +2037,15 @@
     "rangedDefence": 4,
     "magicDefence": 0,
     "value": 25,
-    "headRenderMode": "hairTuck"
+    "headRenderMode": "hairTuck",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    },
+    "model": "/assets/equipment/head/Coif.glb"
   },
   {
     "id": 204,
@@ -3497,7 +3556,15 @@
     "levelRequired": 45,
     "stabDefence": 15,
     "slashDefence": 20,
-    "crushDefence": 10
+    "crushDefence": 10,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 322,
@@ -3512,7 +3579,8 @@
     "levelRequired": 45,
     "stabDefence": 25,
     "slashDefence": 30,
-    "crushDefence": 20
+    "crushDefence": 20,
+    "headRenderMode": "helmet"
   },
   {
     "id": 323,
@@ -3582,7 +3650,8 @@
     "stabDefence": 70,
     "slashDefence": 80,
     "crushDefence": 60,
-    "rangedDefence": 70
+    "rangedDefence": 70,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 327,
@@ -3751,7 +3820,15 @@
     "levelRequired": 55,
     "stabDefence": 18,
     "slashDefence": 24,
-    "crushDefence": 12
+    "crushDefence": 12,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 337,
@@ -3766,7 +3843,8 @@
     "levelRequired": 55,
     "stabDefence": 30,
     "slashDefence": 36,
-    "crushDefence": 24
+    "crushDefence": 24,
+    "headRenderMode": "helmet"
   },
   {
     "id": 338,
@@ -3836,7 +3914,8 @@
     "stabDefence": 84,
     "slashDefence": 96,
     "crushDefence": 72,
-    "rangedDefence": 84
+    "rangedDefence": 84,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 342,
@@ -3958,7 +4037,15 @@
     "slashDefence": 7,
     "crushDefence": 5,
     "equipSkill": "defence",
-    "levelRequired": 1
+    "levelRequired": 1,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 349,
@@ -3974,7 +4061,8 @@
     "slashDefence": 9,
     "crushDefence": 7,
     "equipSkill": "defence",
-    "levelRequired": 1
+    "levelRequired": 1,
+    "headRenderMode": "helmet"
   },
   {
     "id": 350,
@@ -4069,7 +4157,8 @@
     "crushDefence": 15,
     "rangedDefence": 17,
     "equipSkill": "defence",
-    "levelRequired": 1
+    "levelRequired": 1,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 355,
@@ -4191,7 +4280,15 @@
     "slashDefence": 9,
     "crushDefence": 6,
     "equipSkill": "defence",
-    "levelRequired": 6
+    "levelRequired": 6,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 362,
@@ -4207,7 +4304,8 @@
     "slashDefence": 12,
     "crushDefence": 9,
     "equipSkill": "defence",
-    "levelRequired": 6
+    "levelRequired": 6,
+    "headRenderMode": "helmet"
   },
   {
     "id": 363,
@@ -4302,7 +4400,8 @@
     "crushDefence": 21,
     "rangedDefence": 24,
     "equipSkill": "defence",
-    "levelRequired": 6
+    "levelRequired": 6,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 368,
@@ -4424,7 +4523,15 @@
     "crushDefence": 7,
     "model": "/assets/equipment/head/SteelMedHelm.glb",
     "equipSkill": "defence",
-    "levelRequired": 15
+    "levelRequired": 15,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 375,
@@ -4440,7 +4547,8 @@
     "crushDefence": 11,
     "model": "/assets/equipment/head/SteelFullHelm.glb",
     "equipSkill": "defence",
-    "levelRequired": 15
+    "levelRequired": 15,
+    "headRenderMode": "helmet"
   },
   {
     "id": 376,
@@ -4535,7 +4643,8 @@
       "1": "/assets/equipment/body/female/SteelPlatebodyWoman.glb"
     },
     "equipSkill": "defence",
-    "levelRequired": 15
+    "levelRequired": 15,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 381,
@@ -4657,7 +4766,15 @@
     "slashDefence": 19,
     "crushDefence": 11,
     "equipSkill": "defence",
-    "levelRequired": 35
+    "levelRequired": 35,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 388,
@@ -4673,7 +4790,8 @@
     "slashDefence": 27,
     "crushDefence": 19,
     "equipSkill": "defence",
-    "levelRequired": 35
+    "levelRequired": 35,
+    "headRenderMode": "helmet"
   },
   {
     "id": 389,
@@ -4768,7 +4886,8 @@
     "crushDefence": 51,
     "rangedDefence": 59,
     "equipSkill": "defence",
-    "levelRequired": 35
+    "levelRequired": 35,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 394,
@@ -4883,7 +5002,15 @@
     "slashDefence": 15,
     "crushDefence": 9,
     "equipSkill": "defence",
-    "levelRequired": 25
+    "levelRequired": 25,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 401,
@@ -4898,7 +5025,8 @@
     "slashDefence": 21,
     "crushDefence": 15,
     "equipSkill": "defence",
-    "levelRequired": 25
+    "levelRequired": 25,
+    "headRenderMode": "helmet"
   },
   {
     "id": 402,
@@ -4988,7 +5116,8 @@
     "crushDefence": 39,
     "rangedDefence": 45,
     "equipSkill": "defence",
-    "levelRequired": 25
+    "levelRequired": 25,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 407,
@@ -5188,7 +5317,15 @@
     "levelRequired": 45,
     "stabDefence": 18,
     "slashDefence": 23,
-    "crushDefence": 13
+    "crushDefence": 13,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 421,
@@ -5203,7 +5340,8 @@
     "levelRequired": 45,
     "stabDefence": 28,
     "slashDefence": 33,
-    "crushDefence": 23
+    "crushDefence": 23,
+    "headRenderMode": "helmet"
   },
   {
     "id": 422,
@@ -5273,7 +5411,8 @@
     "stabDefence": 73,
     "slashDefence": 83,
     "crushDefence": 63,
-    "rangedDefence": 73
+    "rangedDefence": 73,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 426,
@@ -5408,7 +5547,15 @@
     "levelRequired": 55,
     "stabDefence": 21,
     "slashDefence": 27,
-    "crushDefence": 15
+    "crushDefence": 15,
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "hide"
+      }
+    }
   },
   {
     "id": 434,
@@ -5423,7 +5570,8 @@
     "levelRequired": 55,
     "stabDefence": 33,
     "slashDefence": 39,
-    "crushDefence": 27
+    "crushDefence": 27,
+    "headRenderMode": "helmet"
   },
   {
     "id": 435,
@@ -5493,7 +5641,8 @@
     "stabDefence": 87,
     "slashDefence": 99,
     "crushDefence": 75,
-    "rangedDefence": 87
+    "rangedDefence": 87,
+    "bodyHideStyle": "plate"
   },
   {
     "id": 439,
@@ -6649,7 +6798,7 @@
     "value": 4,
     "stackable": false,
     "equippable": false,
-    "model": "/assets/models/FlaxBundle.glb",
+    "model": "/assets/models/Flax.glb",
     "thumbnailModel": "/assets/models/Flax.glb"
   },
   {
@@ -6787,5 +6936,26 @@
     "noteable": false,
     "equipSlot": "neck",
     "model": "/assets/equipment/neck/PurpleGemAmulet.glb"
+  },
+  {
+    "id": 9,
+    "name": "Leather Chaps",
+    "description": "Basic leather leg armour.",
+    "value": 24,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "model": "/assets/equipment/legs/LeatherChaps.glb"
+  },
+  {
+    "id": 599,
+    "name": "Monk Robe",
+    "description": "A simple robe worn by monks.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb"
   }
 ]

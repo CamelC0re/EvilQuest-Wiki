@@ -1,0 +1,8 @@
+{{#cargo_query:
+tables=MobDropInventory
+|fields=Source
+|where=Item="{{PAGENAME}}"
+|format=ul
+|intro===Sources==
+|default= 
+}}

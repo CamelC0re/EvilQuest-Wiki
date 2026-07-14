@@ -9,9 +9,9 @@ except ImportError:
     pass
 
 # --- CONFIGURATION ---
-WIKI_API_URL = os.environ.get("WIKI_API_URL")
-BOT_USERNAME = os.environ.get("WIKI_BOT_USERNAME")
-BOT_PASSWORD = os.environ.get("WIKI_BOT_PASSWORD")
+WIKI_API_URL = os.environ.get("PROD_WIKI_API_URL")
+BOT_USERNAME = os.environ.get("PROD_WIKI_BOT_USERNAME")
+BOT_PASSWORD = os.environ.get("PROD_WIKI_BOT_PASSWORD")
 
 START_ITEM_ID = 1
 

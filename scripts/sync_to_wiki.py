@@ -1,5 +1,7 @@
 import os
 import sys
+import time
+import json
 import requests
 
 try:
@@ -19,10 +21,16 @@ if not all([WIKI_API_URL, BOT_USERNAME, BOT_PASSWORD]):
 
 # 2. Define the Mapping Matrix matching local repository paths to active wiki pages
 ASSET_SYNC_MATRIX = [
+    {"file": "templates/drops/MobDropInventoryData.wikitext", "title": "Template:MobDropInventoryData", "model": "wikitext"},
+    {"file": "templates/drops/MobDropItem.wikitext", "title": "Template:MobDropItem", "model": "wikitext"},
+    {"file": "templates/drops/RareDropRoll.wikitext", "title": "Template:RareDropRoll", "model": "wikitext"},
+    
     {"file": "modules/ItemData.lua", "title": "Module:ItemData", "model": "Scribunto"},
     {"file": "modules/NpcData.lua", "title": "Module:NPCData", "model": "Scribunto"},
+    {"file": "modules/RareDropData.lua", "title": "Module:RareDropData", "model": "Scribunto"},
     {"file": "data/ItemData.json", "title": "Module:ItemData/json", "model": "json"},
     {"file": "data/NpcData.json", "title": "Module:NPCData/json", "model": "json"},
+    {"file": "data/RareDropData.json", "title": "Module:RareDropData/json", "model": "json"},
     {"file": "styles/Common.css", "title": "MediaWiki:Common.css", "model": "css"}
 ]
 
@@ -40,6 +48,8 @@ for root, _, files in os.walk("templates"):
             # Handle edge cases
             if base_name == "Wiki_Discord":
                 title_name = "Wiki/Discord"
+            elif base_name == "Infobox_Npc":
+                title_name = "Infobox NPC"
             else:
                 title_name = base_name.replace("_", " ")
             
@@ -114,6 +124,86 @@ def execute_wiki_sync():
             print(f"❌ Sync failed for [[{wiki_title}]]: {response_data['error'].get('info')}")
         else:
             print(f"✨ Successfully deployed [[{wiki_title}]]! Revision ID: {response_data['edit'].get('newrevid')}")
+
+    # Provision Articles
+    print("\n📦 Provisioning Missing Item Articles...")
+    provision_item_articles(session, csrf_token)
+    print("\n📦 Provisioning Missing NPC Articles...")
+    provision_npc_articles(session, csrf_token)
+
+def provision_item_articles(session, csrf_token):
+    data_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "ItemData.json")
+    if not os.path.exists(data_path):
+        return
+    with open(data_path, "r", encoding="utf-8") as f:
+        items = json.load(f)
+    
+    created, skipped = 0, 0
+    for item in items:
+        name = item.get("name")
+        if not name:
+            continue
+        
+        params = {
+            "action": "edit", "title": name, "text": "{{Item}}",
+            "summary": "Automated pipeline provisioning: Initialized structural item placeholder.",
+            "token": csrf_token, "format": "json", "createonly": 1,
+        }
+        res = session.post(WIKI_API_URL, data=params).json()
+        if "edit" in res and res["edit"]["result"] == "Success":
+            print(f"[CREATED] {name}")
+            created += 1
+        elif "error" in res and res["error"]["code"] == "articleexists":
+            skipped += 1
+        else:
+            print(f"[FAILED] {name}: {res.get('error', res)}")
+        time.sleep(0.1)
+    print(f"Items Provisioning Complete. Created: {created} | Skipped: {skipped}")
+
+def provision_npc_articles(session, csrf_token):
+    data_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "NpcData.json")
+    if not os.path.exists(data_path):
+        return
+    with open(data_path, "r", encoding="utf-8") as f:
+        npcs = json.load(f)
+    
+    name_counts = {}
+    for npc in npcs:
+        name = npc.get("name")
+        if name:
+            name_counts[name] = name_counts.get(name, 0) + 1
+
+    created, skipped = 0, 0
+    unique_titles = set()
+    for npc in npcs:
+        name = npc.get("name")
+        if not name:
+            continue
+        
+        if name_counts[name] > 1:
+            title = f"{name} (Lvl {npc.get('combatLevel', '??')})"
+        else:
+            title = name
+        
+        if title in unique_titles:
+            continue
+        unique_titles.add(title)
+        
+        params = {
+            "action": "edit", "title": title, "text": "{{Infobox NPC}}",
+            "summary": "Provisioned disambiguated NPC placeholder.",
+            "token": csrf_token, "format": "json", "createonly": 1,
+        }
+        res = session.post(WIKI_API_URL, data=params).json()
+        if "edit" in res and res["edit"]["result"] == "Success":
+            print(f"[CREATED] {title}")
+            created += 1
+        elif "error" in res and res["error"]["code"] == "articleexists":
+            skipped += 1
+        else:
+            print(f"[FAILED] {title}: {res.get('error', res)}")
+        time.sleep(0.1)
+    print(f"NPCs Provisioning Complete. Created: {created} | Skipped: {skipped}")
 
 if __name__ == "__main__":
     execute_wiki_sync()

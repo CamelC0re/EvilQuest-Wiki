@@ -1,7 +1,7 @@
 |-
 | [[{{{Item}}}]]
 | {{{Amount}}}
-| {{{Rate}}}%
+| {{{Rate}}}{{#iferror: {{#expr: {{{Rate}}} + 0 }} | | % }}
 <includeonly>{{#cargo_store:_table=MobDropInventory
 |Source={{PAGENAME}}
 |Item={{{Item}}}

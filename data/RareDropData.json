@@ -1,0 +1,134 @@
+[
+  {
+    "id": "universal",
+    "name": "Universal rare drop table",
+    "entries": [
+      {
+        "type": "item",
+        "itemId": 10
+      },
+      {
+        "type": "item",
+        "itemId": 10
+      },
+      {
+        "type": "item",
+        "itemId": 285
+      },
+      {
+        "type": "item",
+        "itemId": 286
+      },
+      {
+        "type": "item",
+        "itemId": 142
+      },
+      {
+        "type": "item",
+        "itemId": 48
+      },
+      {
+        "type": "item",
+        "itemId": 45
+      },
+      {
+        "type": "item",
+        "itemId": 49
+      },
+      {
+        "type": "item",
+        "itemId": 50
+      },
+      {
+        "type": "item",
+        "itemId": 91
+      },
+      {
+        "type": "item",
+        "itemId": 97
+      },
+      {
+        "type": "item",
+        "itemId": 92
+      },
+      {
+        "type": "item",
+        "itemId": 105
+      },
+      {
+        "type": "item",
+        "itemId": 106
+      },
+      {
+        "type": "item",
+        "itemId": 111
+      },
+      {
+        "type": "table",
+        "tableId": "mega_rare"
+      }
+    ]
+  },
+  {
+    "id": "mega_rare",
+    "name": "Mega-rare drop table",
+    "entries": [
+      {
+        "type": "item",
+        "itemId": 10
+      },
+      {
+        "type": "item",
+        "itemId": 575
+      },
+      {
+        "type": "item",
+        "itemId": 576
+      },
+      {
+        "type": "item",
+        "itemId": 577
+      },
+      {
+        "type": "item",
+        "itemId": 578
+      },
+      {
+        "type": "item",
+        "itemId": 579
+      },
+      {
+        "type": "item",
+        "itemId": 580
+      },
+      {
+        "type": "item",
+        "itemId": 581
+      },
+      {
+        "type": "item",
+        "itemId": 311
+      },
+      {
+        "type": "item",
+        "itemId": 329
+      },
+      {
+        "type": "item",
+        "itemId": 330
+      },
+      {
+        "type": "item",
+        "itemId": 412
+      },
+      {
+        "type": "item",
+        "itemId": 386
+      },
+      {
+        "type": "item",
+        "itemId": 393
+      }
+    ]
+  }
+]

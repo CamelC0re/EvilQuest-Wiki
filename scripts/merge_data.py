@@ -8,8 +8,10 @@ def merge_entities(entity_name, data_path, staging_path):
         return
 
     # Load your historical data and the new update data
-    with open(data_path, 'r', encoding="utf-8") as f:
-        old_entities = {item['id']: item for item in json.load(f)}
+    old_entities = {}
+    if os.path.exists(data_path):
+        with open(data_path, 'r', encoding="utf-8") as f:
+            old_entities = {item['id']: item for item in json.load(f)}
         
     with open(staging_path, 'r', encoding="utf-8") as f:
         new_entities = {item['id']: item for item in json.load(f)}
@@ -62,6 +64,13 @@ def merge_game_data():
         "NPCs",
         os.path.join(base_dir, "data", "NpcData.json"),
         os.path.join(base_dir, "staging", "npcs.json")
+    )
+    
+    # Merge Rare Drop Tables
+    merge_entities(
+        "Rare Drop Tables",
+        os.path.join(base_dir, "data", "RareDropData.json"),
+        os.path.join(base_dir, "staging", "rare-drop-tables.json")
     )
 
 if __name__ == "__main__":
