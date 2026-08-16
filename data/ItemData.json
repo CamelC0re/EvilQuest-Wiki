@@ -167,7 +167,11 @@
     "rangedDefence": 10,
     "magicDefence": -5,
     "value": 80,
-    "bodyHideStyle": "chain"
+    "bodyHideStyle": "shirtRecolor",
+    "model": "/assets/equipment/body/ChainmailBody.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/ChainmailBodyWoman.glb"
+    }
   },
   {
     "id": 19,
@@ -202,7 +206,8 @@
     "meleeStrength": 4,
     "magicAccuracy": 3,
     "value": 200,
-    "model": "/assets/equipment/neck/SapphireAmuletString.glb"
+    "model": "/assets/equipment/neck/SapphireAmuletString.glb",
+    "discontinued": true
   },
   {
     "id": 23,
@@ -885,7 +890,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -940,7 +945,7 @@
     "slashDefence": 10,
     "crushDefence": 6,
     "rangedDefence": 8,
-    "bodyHideStyle": "chain",
+    "bodyHideStyle": "shirtRecolor",
     "equipSkill": "defence",
     "levelRequired": 1
   },
@@ -1128,7 +1133,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -1183,7 +1188,7 @@
     "slashDefence": 15,
     "crushDefence": 9,
     "rangedDefence": 12,
-    "bodyHideStyle": "chain",
+    "bodyHideStyle": "shirtRecolor",
     "equipSkill": "defence",
     "levelRequired": 6
   },
@@ -1371,7 +1376,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -1614,7 +1619,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -1850,7 +1855,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -2537,12 +2542,13 @@
   },
   {
     "id": 234,
-    "name": "Evil token (tier 1)",
-    "description": "A token imbued with faint evil energy. Used as a resource for evil magic.",
+    "name": "Chaos Essence",
+    "description": "Vital essence drawn from lesser creatures. Used to cast low-tier combat magic.",
     "stackable": true,
     "equippable": false,
-    "value": 1,
-    "icon": "Evil token (tier 1).png"
+    "value": 3,
+    "icon": "essence-chaos.png",
+    "legacyName": "Evil token (tier 1)"
   },
   {
     "id": 235,
@@ -2718,75 +2724,83 @@
   },
   {
     "id": 254,
-    "name": "Sapphire",
-    "description": "A polished blue gemstone.",
+    "name": "Uncut Sapphire",
+    "description": "A rough blue gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 160,
-    "model": "/assets/models/gems/Sapphire.glb"
+    "model": "/assets/models/gems/Sapphire.glb",
+    "legacyName": "Sapphire"
   },
   {
     "id": 255,
-    "name": "Emerald",
-    "description": "A polished green gemstone.",
+    "name": "Uncut Emerald",
+    "description": "A rough green gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 240,
-    "model": "/assets/models/gems/Emerald.glb"
+    "model": "/assets/models/gems/Emerald.glb",
+    "legacyName": "Emerald"
   },
   {
     "id": 256,
-    "name": "Ruby",
-    "description": "A polished red gemstone.",
+    "name": "Uncut Ruby",
+    "description": "A rough red gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 320,
-    "model": "/assets/models/gems/Ruby.glb"
+    "model": "/assets/models/gems/Ruby.glb",
+    "legacyName": "Ruby"
   },
   {
     "id": 257,
-    "name": "Diamond",
-    "description": "A clear gemstone cut to catch the light.",
+    "name": "Uncut Diamond",
+    "description": "A rough clear gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 500,
-    "model": "/assets/models/gems/Diamond.glb"
+    "model": "/assets/models/gems/Diamond.glb",
+    "legacyName": "Diamond"
   },
   {
     "id": 258,
-    "name": "Amethyst",
-    "description": "A purple gemstone cluster.",
+    "name": "Uncut Amethyst",
+    "description": "A rough purple gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 120,
-    "model": "/assets/models/gems/Amethyst.glb"
+    "model": "/assets/models/gems/Amethyst.glb",
+    "legacyName": "Amethyst"
   },
   {
     "id": 259,
-    "name": "Topaz",
-    "description": "A golden gemstone with a warm glow.",
+    "name": "Uncut Topaz",
+    "description": "A rough golden gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 180,
-    "model": "/assets/models/gems/Topaz.glb"
+    "model": "/assets/models/gems/Topaz.glb",
+    "legacyName": "Topaz"
   },
   {
     "id": 260,
-    "name": "Opal",
-    "description": "A pale gemstone with shifting color flashes.",
+    "name": "Uncut Opal",
+    "description": "A rough pale gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 220,
-    "model": "/assets/models/gems/Opal.glb"
+    "model": "/assets/models/gems/Opal.glb",
+    "legacyName": "Opal"
   },
   {
     "id": 261,
-    "name": "Onyx",
-    "description": "A dark gemstone with a glassy surface.",
+    "name": "Uncut Onyx",
+    "description": "A rough dark gemstone ready to be cut.",
     "stackable": false,
     "equippable": false,
     "value": 260,
-    "model": "/assets/models/gems/Onyx.glb"
+    "model": "/assets/models/gems/Onyx.glb",
+    "legacyName": "Onyx"
   },
   {
     "id": 262,
@@ -2795,7 +2809,7 @@
     "stackable": false,
     "equippable": false,
     "value": 12,
-    "model": "/assets/models/Shortbow.glb"
+    "model": "/assets/models/UnstrungShortbow.glb"
   },
   {
     "id": 263,
@@ -3092,7 +3106,7 @@
     "stackable": false,
     "equippable": false,
     "value": 6,
-    "model": "/assets/models/hides/CowHide.glb"
+    "model": "/assets/models/HideCow.glb"
   },
   {
     "id": 297,
@@ -3101,7 +3115,7 @@
     "stackable": false,
     "equippable": false,
     "value": 18,
-    "model": "/assets/models/hides/BearHide.glb"
+    "model": "/assets/models/HideBear.glb"
   },
   {
     "id": 298,
@@ -3110,7 +3124,7 @@
     "stackable": false,
     "equippable": false,
     "value": 12,
-    "model": "/assets/models/hides/WolfHide.glb"
+    "model": "/assets/models/HideWolf.glb"
   },
   {
     "id": 299,
@@ -3119,7 +3133,7 @@
     "stackable": false,
     "equippable": false,
     "value": 10,
-    "model": "/assets/models/hides/DeerHide.glb"
+    "model": "/assets/models/HideDeer.glb"
   },
   {
     "id": 300,
@@ -3128,7 +3142,7 @@
     "stackable": false,
     "equippable": false,
     "value": 14,
-    "model": "/assets/models/hides/CamelHide.glb"
+    "model": "/assets/models/HideCamel.glb"
   },
   {
     "id": 301,
@@ -3173,7 +3187,8 @@
     "stackable": false,
     "equippable": false,
     "value": 20,
-    "model": "/assets/models/hides/TannedDeerHide.glb"
+    "model": "/assets/models/hides/TannedDeerHide.glb",
+    "discontinued": true
   },
   {
     "id": 306,
@@ -3191,7 +3206,8 @@
     "stackable": false,
     "equippable": false,
     "value": 32,
-    "model": "/assets/models/hides/TannedHumanHide.glb"
+    "model": "/assets/models/hides/TannedHumanHide.glb",
+    "discontinued": true
   },
   {
     "id": 274,
@@ -3219,7 +3235,7 @@
     "stackable": false,
     "equippable": false,
     "value": 22,
-    "model": "/assets/models/OakShortbow.glb"
+    "model": "/assets/models/UnstrungOakShortbow.glb"
   },
   {
     "id": 276,
@@ -3228,7 +3244,7 @@
     "stackable": false,
     "equippable": false,
     "value": 34,
-    "model": "/assets/models/WillowShortbow.glb"
+    "model": "/assets/models/UnstrungWillowShortbow.glb"
   },
   {
     "id": 277,
@@ -3237,7 +3253,7 @@
     "stackable": false,
     "equippable": false,
     "value": 48,
-    "model": "/assets/models/MapleShortbow.glb"
+    "model": "/assets/models/UnstrungMapleShortbow.glb"
   },
   {
     "id": 278,
@@ -3246,7 +3262,7 @@
     "stackable": false,
     "equippable": false,
     "value": 70,
-    "model": "/assets/models/YewShortbow.glb"
+    "model": "/assets/models/UnstrungYewShortbow.glb"
   },
   {
     "id": 279,
@@ -3255,7 +3271,7 @@
     "stackable": false,
     "equippable": false,
     "value": 100,
-    "model": "/assets/models/MysticShortbow.glb"
+    "model": "/assets/models/UnstrungMysticShortbow.glb"
   },
   {
     "id": 280,
@@ -3369,7 +3385,8 @@
     "equippable": false,
     "value": 1,
     "icon": "Blood-Rune_619.png",
-    "model": "/assets/models/HumanHeart.glb"
+    "model": "/assets/models/HumanHeart.glb",
+    "questItem": true
   },
   {
     "id": 310,
@@ -3562,7 +3579,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -3826,7 +3843,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -4043,7 +4060,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -4098,7 +4115,7 @@
     "slashDefence": 13,
     "crushDefence": 9,
     "rangedDefence": 11,
-    "bodyHideStyle": "chain",
+    "bodyHideStyle": "shirtRecolor",
     "equipSkill": "defence",
     "levelRequired": 1
   },
@@ -4286,7 +4303,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -4341,7 +4358,7 @@
     "slashDefence": 18,
     "crushDefence": 12,
     "rangedDefence": 15,
-    "bodyHideStyle": "chain",
+    "bodyHideStyle": "shirtRecolor",
     "equipSkill": "defence",
     "levelRequired": 6
   },
@@ -4529,7 +4546,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -4772,7 +4789,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -5008,7 +5025,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -5323,7 +5340,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -5553,7 +5570,7 @@
       "face": "show",
       "jaw": "show",
       "hair": {
-        "mode": "hide"
+        "mode": "scalp"
       }
     }
   },
@@ -6700,7 +6717,7 @@
   {
     "id": 576,
     "name": "Amulet of Hate",
-    "description": "The enchanted form of an amulet of onyx. Evil magic deals 5% more damage.",
+    "description": "The enchanted form of an amulet of onyx. Dark magic deals 5% more damage.",
     "value": 320,
     "stackable": false,
     "equippable": true,
@@ -6744,7 +6761,7 @@
   {
     "id": 580,
     "name": "Amulet of Grace",
-    "description": "The enchanted form of a diamond amulet. Restores 1 Good Magic point every 30 ticks.",
+    "description": "The enchanted form of a diamond amulet. Restores 1 drained Light Magic level every 30 ticks.",
     "value": 560,
     "stackable": false,
     "equippable": true,
@@ -6919,7 +6936,7 @@
   {
     "id": 595,
     "name": "Unstrung Imperial Stone Amulet",
-    "description": "An imperial stone amulet that needs stringing once the stone is available.",
+    "description": "An imperial stone amulet that needs stringing.",
     "value": 510,
     "stackable": false,
     "equippable": false,
@@ -6929,7 +6946,7 @@
   {
     "id": 596,
     "name": "Amulet of Imperial Stone",
-    "description": "An unenchanted imperial stone amulet. The gem will be added later.",
+    "description": "An unenchanted imperial stone amulet.",
     "value": 520,
     "stackable": false,
     "equippable": true,
@@ -6956,6 +6973,960 @@
     "equippable": true,
     "equipSlot": "body",
     "bodyHideStyle": "plate",
-    "model": "/assets/equipment/body/MonkRobe.glb"
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.24,
+      0.14,
+      0.075
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 600,
+    "name": "Monk Robe Bottom",
+    "description": "A simple robe bottom worn by monks.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.24,
+      0.14,
+      0.075
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 601,
+    "name": "Light Magic Robe",
+    "description": "A bright robe favoured by practitioners of light magic.",
+    "value": 35,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.46,
+      0.46,
+      0.42
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 602,
+    "name": "Light Magic Robe Bottom",
+    "description": "A bright robe bottom favoured by practitioners of light magic.",
+    "value": 30,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.46,
+      0.46,
+      0.42
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 603,
+    "name": "Dark Magic Robe",
+    "description": "A dark robe steeped in dark magic.",
+    "value": 35,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.05,
+      0.04,
+      0.065
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 604,
+    "name": "Dark Magic Robe Bottom",
+    "description": "A dark robe bottom steeped in dark magic.",
+    "value": 30,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.05,
+      0.04,
+      0.065
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 605,
+    "name": "Green Robe",
+    "description": "A loose green robe.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.08,
+      0.26,
+      0.1
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 606,
+    "name": "Green Robe Bottom",
+    "description": "A loose green robe bottom.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.08,
+      0.26,
+      0.1
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 607,
+    "name": "Pink Robe",
+    "description": "A loose pink robe.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.42,
+      0.12,
+      0.26
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 608,
+    "name": "Pink Robe Bottom",
+    "description": "A loose pink robe bottom.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.42,
+      0.12,
+      0.26
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 609,
+    "name": "Light Magic Wizard Hat",
+    "description": "A bright pointed hat favoured by practitioners of light magic.",
+    "value": 90,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "head",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.46,
+      0.46,
+      0.42
+    ],
+    "headRenderMode": "hairFit",
+    "model": "/assets/equipment/head/BlueWizardHat.glb"
+  },
+  {
+    "id": 610,
+    "name": "Dark Magic Wizard Hat",
+    "description": "A dark pointed hat steeped in dark magic.",
+    "value": 90,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "head",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.05,
+      0.04,
+      0.065
+    ],
+    "headRenderMode": "hairFit",
+    "model": "/assets/equipment/head/BlueWizardHat.glb"
+  },
+  {
+    "id": 611,
+    "name": "Vorass Bow",
+    "description": "A bow fashioned in the likeness of Vorass.",
+    "value": 50000,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "weapon",
+    "attackRange": 9,
+    "weaponStyle": "bow",
+    "twoHanded": true,
+    "model": "/assets/equipment/weapon/SpiderBow.glb"
+  },
+  {
+    "id": 612,
+    "name": "Vorass Fangs",
+    "description": "A pair of vicious claws fashioned after Vorass's fangs.",
+    "value": 50000,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "weapon",
+    "weaponStyle": "slash",
+    "twoHanded": true,
+    "model": "/assets/equipment/weapon/SpiderClaws.glb"
+  },
+  {
+    "id": 613,
+    "name": "Bear Ranged Body",
+    "description": "A rugged ranged body fashioned from bear hide.",
+    "value": 45,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "bodyHideStyle": "leather",
+    "model": "/assets/equipment/body/BearRanged.glb"
+  },
+  {
+    "id": 614,
+    "name": "Fur Ranged Top",
+    "description": "A warm ranged top reinforced with thick fur.",
+    "value": 45,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "bodyHideStyle": "shirtHidden",
+    "model": "/assets/equipment/body/RangedTopFur.glb"
+  },
+  {
+    "id": 615,
+    "name": "Amulet of Warding",
+    "description": "The enchanted form of a sapphire amulet. Grants +6 magic defence.",
+    "value": 240,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "neck",
+    "model": "/assets/equipment/neck/SapphireAmulet.glb"
+  },
+  {
+    "id": 616,
+    "name": "Fur Ranged Bottom",
+    "description": "Warm ranged leg armour reinforced with thick fur.",
+    "value": 35,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "model": "/assets/equipment/legs/RangedBottomFur.glb"
+  },
+  {
+    "id": 617,
+    "name": "Beer",
+    "description": "A frothy glass of beer. Restores 1 hitpoint.",
+    "value": 2,
+    "stackable": false,
+    "equippable": false,
+    "healAmount": 1,
+    "consumeVerb": "Drink",
+    "icon": "Beer_193.png"
+  },
+  {
+    "id": 618,
+    "name": "Needle and Thread",
+    "description": "A sewing needle supplied with thread. Extra thread is added to this stack automatically.",
+    "value": 1,
+    "stackable": true,
+    "equippable": false,
+    "model": "/assets/models/NeedleAndThread.glb"
+  },
+  {
+    "id": 619,
+    "name": "Thread",
+    "description": "A full spool of sewing thread. It is added to your needle and thread when you have one.",
+    "value": 1,
+    "stackable": true,
+    "equippable": false,
+    "model": "/assets/models/Thread.glb"
+  },
+  {
+    "id": 620,
+    "name": "Blue Robe",
+    "description": "A loose blue robe worn for fashion.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.07,
+      0.2,
+      0.52
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 621,
+    "name": "Blue Robe Bottom",
+    "description": "A loose blue robe bottom worn for fashion.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.07,
+      0.2,
+      0.52
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 622,
+    "name": "Red Robe",
+    "description": "A loose red robe worn for fashion.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.46,
+      0.055,
+      0.045
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 623,
+    "name": "Red Robe Bottom",
+    "description": "A loose red robe bottom worn for fashion.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.46,
+      0.055,
+      0.045
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 624,
+    "name": "Purple Robe",
+    "description": "A loose purple robe worn for fashion.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.3,
+      0.075,
+      0.46
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 625,
+    "name": "Purple Robe Bottom",
+    "description": "A loose purple robe bottom worn for fashion.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.3,
+      0.075,
+      0.46
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 626,
+    "name": "Yellow Robe",
+    "description": "A loose yellow robe worn for fashion.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.5,
+      0.3,
+      0.045
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 627,
+    "name": "Yellow Robe Bottom",
+    "description": "A loose yellow robe bottom worn for fashion.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.5,
+      0.3,
+      0.045
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 628,
+    "name": "Dark Green Robe",
+    "description": "A loose dark green robe worn for fashion.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.025,
+      0.095,
+      0.035
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 629,
+    "name": "Dark Green Robe Bottom",
+    "description": "A loose dark green robe bottom worn for fashion.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.025,
+      0.095,
+      0.035
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 630,
+    "name": "Black Robe",
+    "description": "A loose black robe worn for fashion.",
+    "value": 25,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.03,
+      0.03,
+      0.035
+    ],
+    "neckGearFitMode": "robeTop",
+    "bodyHideStyle": "plate",
+    "model": "/assets/equipment/body/MonkRobe.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/MonkRobeWoman.glb"
+    }
+  },
+  {
+    "id": 631,
+    "name": "Black Robe Bottom",
+    "description": "A loose black robe bottom worn for fashion.",
+    "value": 20,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "legs",
+    "gearMaterialStyle": "clothing",
+    "clothingColor": [
+      0.03,
+      0.03,
+      0.035
+    ],
+    "legHideStyle": "robe",
+    "model": "/assets/equipment/legs/MonkRobeBottom.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/legs/female/MonkRobeBottomWoman.glb"
+    }
+  },
+  {
+    "id": 632,
+    "name": "Berserker Helmet",
+    "description": "A horned iron helmet built for aggressive warriors.",
+    "value": 120,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "head",
+    "headRenderMode": "hat",
+    "headOcclusion": {
+      "face": "show",
+      "jaw": "show",
+      "hair": {
+        "mode": "scalp"
+      }
+    },
+    "model": "/assets/equipment/head/BerserkerHelm.glb"
+  },
+  {
+    "id": 633,
+    "name": "Berserker Scale Harness",
+    "description": "Overlapping iron scales fixed to a dark leather harness with blood-red straps.",
+    "value": 600,
+    "stackable": false,
+    "equippable": true,
+    "equipSlot": "body",
+    "bodyHideStyle": "shirtRecolor",
+    "model": "/assets/equipment/body/BerserkerPlatebody.glb",
+    "bodyTypeModels": {
+      "1": "/assets/equipment/body/female/BerserkerPlatebodyWoman.glb"
+    }
+  },
+  {
+    "id": 634,
+    "name": "Uncut Imperial Stone",
+    "description": "A rough royal-purple gemstone ready to be cut.",
+    "value": 720,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/ImperialStone.glb"
+  },
+  {
+    "id": 635,
+    "name": "Cut Sapphire",
+    "description": "A blue gemstone polished into bright facets.",
+    "value": 200,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutSapphire.glb"
+  },
+  {
+    "id": 636,
+    "name": "Cut Emerald",
+    "description": "A green gemstone shaped into a precise rectangular cut.",
+    "value": 300,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutEmerald.glb"
+  },
+  {
+    "id": 637,
+    "name": "Cut Ruby",
+    "description": "A red gemstone polished into bright facets.",
+    "value": 400,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutRuby.glb"
+  },
+  {
+    "id": 638,
+    "name": "Cut Diamond",
+    "description": "A clear gemstone cut to catch every trace of light.",
+    "value": 625,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutDiamond.glb"
+  },
+  {
+    "id": 639,
+    "name": "Cut Amethyst",
+    "description": "A purple gemstone polished into bright facets.",
+    "value": 150,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutAmethyst.glb"
+  },
+  {
+    "id": 640,
+    "name": "Cut Topaz",
+    "description": "A warm golden gemstone shaped into a pear cut.",
+    "value": 225,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutTopaz.glb"
+  },
+  {
+    "id": 641,
+    "name": "Cut Opal",
+    "description": "A pale polished gemstone flashing with shifting colors.",
+    "value": 275,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutOpal.glb"
+  },
+  {
+    "id": 642,
+    "name": "Cut Onyx",
+    "description": "A dark gemstone polished into glassy facets.",
+    "value": 325,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutOnyx.glb"
+  },
+  {
+    "id": 643,
+    "name": "Cut Imperial Stone",
+    "description": "A royal-purple gemstone shaped into an imperial shield cut.",
+    "value": 900,
+    "stackable": false,
+    "equippable": false,
+    "model": "/assets/models/gems/CutImperialStone.glb"
+  },
+  {
+    "id": 644,
+    "name": "Chisel",
+    "description": "A small steel chisel for cutting gemstones.",
+    "value": 10,
+    "stackable": false,
+    "equippable": false,
+    "toolType": "chisel",
+    "model": "/assets/models/Chisel.glb"
+  },
+  {
+    "id": 645,
+    "name": "Gold Ring",
+    "description": "A plain unenchanted gold ring.",
+    "value": 155,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/GoldRing.glb"
+  },
+  {
+    "id": 646,
+    "name": "Sapphire Ring",
+    "description": "An unenchanted gold ring set with a sapphire.",
+    "value": 330,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/SapphireRing.glb"
+  },
+  {
+    "id": 647,
+    "name": "Emerald Ring",
+    "description": "An unenchanted gold ring set with an emerald.",
+    "value": 430,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/EmeraldRing.glb"
+  },
+  {
+    "id": 648,
+    "name": "Ruby Ring",
+    "description": "An unenchanted gold ring set with a ruby.",
+    "value": 530,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/RubyRing.glb"
+  },
+  {
+    "id": 649,
+    "name": "Diamond Ring",
+    "description": "An unenchanted gold ring set with a diamond.",
+    "value": 755,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/DiamondRing.glb"
+  },
+  {
+    "id": 650,
+    "name": "Amethyst Ring",
+    "description": "An unenchanted gold ring set with an amethyst.",
+    "value": 280,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/AmethystRing.glb"
+  },
+  {
+    "id": 651,
+    "name": "Topaz Ring",
+    "description": "An unenchanted gold ring set with a topaz.",
+    "value": 355,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/TopazRing.glb"
+  },
+  {
+    "id": 652,
+    "name": "Opal Ring",
+    "description": "An unenchanted gold ring set with an opal.",
+    "value": 405,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/OpalRing.glb"
+  },
+  {
+    "id": 653,
+    "name": "Onyx Ring",
+    "description": "An unenchanted gold ring set with an onyx.",
+    "value": 455,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/OnyxRing.glb"
+  },
+  {
+    "id": 654,
+    "name": "Imperial Stone Ring",
+    "description": "An unenchanted gold ring set with an imperial stone.",
+    "value": 1030,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/ImperialStoneRing.glb"
+  },
+  {
+    "id": 655,
+    "name": "Ring of Gold",
+    "description": "The enchanted form of a gold ring.",
+    "value": 175,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/GoldRing.glb"
+  },
+  {
+    "id": 656,
+    "name": "Ring of Warding",
+    "description": "The enchanted form of a sapphire ring. Grants +3 magic defence.",
+    "value": 350,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/SapphireRing.glb"
+  },
+  {
+    "id": 657,
+    "name": "Ring of Focus",
+    "description": "The enchanted form of an emerald ring. Ranged attacks deal 2.5% more damage.",
+    "value": 450,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/EmeraldRing.glb"
+  },
+  {
+    "id": 658,
+    "name": "Ring of Strength",
+    "description": "The enchanted form of a ruby ring. Grants +2.5 melee strength.",
+    "value": 550,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/RubyRing.glb"
+  },
+  {
+    "id": 659,
+    "name": "Ring of Grace",
+    "description": "The enchanted form of a diamond ring. Restores 1 drained Light Magic level every 30 ticks.",
+    "value": 780,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/DiamondRing.glb"
+  },
+  {
+    "id": 660,
+    "name": "Ring of Hate",
+    "description": "The enchanted form of an onyx ring. Dark magic deals 2.5% more damage.",
+    "value": 480,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/OnyxRing.glb"
+  },
+  {
+    "id": 661,
+    "name": "Ring of Heroes",
+    "description": "The enchanted form of an imperial stone ring. Grants +2.5 to every combat bonus.",
+    "value": 1080,
+    "stackable": false,
+    "equippable": true,
+    "noteable": false,
+    "equipSlot": "ring",
+    "model": "/assets/equipment/ring/ImperialStoneRing.glb"
+  },
+  {
+    "id": 662,
+    "name": "Water Essence",
+    "description": "Elemental essence carried by fish and released through careful cooking.",
+    "value": 3,
+    "stackable": true,
+    "equippable": false,
+    "icon": "essence-water.png"
+  },
+  {
+    "id": 663,
+    "name": "Fire Essence",
+    "description": "Elemental essence kindled by living wood and the deliberate making of fire.",
+    "value": 3,
+    "stackable": true,
+    "equippable": false,
+    "icon": "essence-fire.png"
+  },
+  {
+    "id": 664,
+    "name": "Earth Essence",
+    "description": "Elemental essence freed from stone, ore, and shaped metal.",
+    "value": 3,
+    "stackable": true,
+    "equippable": false,
+    "icon": "essence-earth.png"
+  },
+  {
+    "id": 665,
+    "name": "Air Essence",
+    "description": "Elemental essence gathered through deft craft and a light rogue's touch.",
+    "value": 3,
+    "stackable": true,
+    "equippable": false,
+    "icon": "essence-air.png"
+  },
+  {
+    "id": 666,
+    "name": "Death Essence",
+    "description": "Vital essence taken from dangerous creatures. Used to cast mid-tier combat magic.",
+    "value": 15,
+    "stackable": true,
+    "equippable": false,
+    "icon": "essence-death.png"
+  },
+  {
+    "id": 667,
+    "name": "Blood Essence",
+    "description": "Dense vital essence taken from the most powerful creatures.",
+    "value": 75,
+    "stackable": true,
+    "equippable": false,
+    "icon": "essence-blood.png"
+  },
+  {
+    "id": 668,
+    "name": "Ancient Bones",
+    "description": "Ancient remains still saturated with a formidable life force.",
+    "value": 100,
+    "stackable": false,
+    "equippable": false,
+    "icon": "Dragon_Bones_814.png",
+    "model": "/assets/models/Bones_v2.glb"
   }
 ]

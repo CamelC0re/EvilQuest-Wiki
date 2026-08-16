@@ -107,15 +107,16 @@
   },
   {
     "id": 2,
-    "name": "Giant Rat",
+    "name": "Sewer Rat",
     "health": 15,
     "attack": 4,
     "defence": 2,
     "strength": 4,
     "attackSpeed": 4,
-    "combatLevel": 6,
-    "examineText": "A rat grown far beyond anyone's comfort.",
-    "wanderRange": 3
+    "combatLevel": 5,
+    "examineText": "A hulking sewer rat, scarred by filth and hunger.",
+    "wanderRange": 3,
+    "legacyName": "Giant Rat"
   },
   {
     "id": 3,
@@ -879,5 +880,170 @@
     "combatLevel": 13,
     "hasShop": true,
     "wanderRange": 1
+  },
+  {
+    "id": 135,
+    "name": "Bartender",
+    "examineText": "He has heard every tavern tale twice and believed half of one.",
+    "modelNpcId": 8,
+    "attackable": false,
+    "combatLevel": 13,
+    "hasShop": true,
+    "stationary": true,
+    "wanderRange": 0
+  },
+  {
+    "id": 136,
+    "name": "Tavern Server",
+    "examineText": "She carries four mugs and no patience for a fifth.",
+    "modelNpcId": 102,
+    "attackable": true,
+    "combatLevel": 2,
+    "wanderRange": 2
+  },
+  {
+    "id": 137,
+    "name": "Tavern Patron",
+    "examineText": "A local making a determined study of the bottom of a mug.",
+    "modelNpcId": 102,
+    "attackable": true,
+    "combatLevel": 2,
+    "wanderRange": 1
+  },
+  {
+    "id": 138,
+    "name": "Citizen",
+    "editorLabel": "Citizen - Market Directions",
+    "examineText": "One of the city's many people with somewhere to be.",
+    "modelNpcId": 102,
+    "attackable": true,
+    "combatLevel": 2,
+    "wanderRange": 4
+  },
+  {
+    "id": 139,
+    "name": "Citizen",
+    "editorLabel": "Citizen - City Complaints",
+    "examineText": "A citizen carrying the weary confidence of a regular taxpayer.",
+    "modelNpcId": 102,
+    "attackable": true,
+    "combatLevel": 2,
+    "wanderRange": 4
+  },
+  {
+    "id": 140,
+    "name": "North Quarter Resident",
+    "examineText": "A resident in well-mended clothes and weathered boots.",
+    "modelNpcId": 102,
+    "attackable": true,
+    "combatLevel": 2,
+    "wanderRange": 1
+  },
+  {
+    "id": 141,
+    "name": "City Watch",
+    "examineText": "A watch officer keeping one eye on the market and one on the sewer grates.",
+    "modelNpcId": 7,
+    "defaultAppearance": {
+      "bodyType": 0,
+      "legStyle": 0,
+      "shirtColor": 3,
+      "pantsColor": 4,
+      "shoesColor": 0,
+      "hairColor": 0,
+      "beltColor": 1,
+      "skinColor": 2,
+      "hairStyle": 1
+    },
+    "defaultEquipment": [
+      87,
+      83,
+      80,
+      85,
+      84,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "defaultGearProfile": "guard",
+    "attackable": true,
+    "combatLevel": 30,
+    "wanderRange": 4
+  },
+  {
+    "id": 142,
+    "name": "Citizen",
+    "editorLabel": "Citizen - No Dialogue",
+    "examineText": "One of the city's many people with somewhere to be.",
+    "modelNpcId": 102,
+    "attackable": true,
+    "combatLevel": 2,
+    "wanderRange": 4
+  },
+  {
+    "id": 143,
+    "name": "Snake",
+    "examineText": "A watchful snake coiled with bad intentions.",
+    "attackable": true,
+    "combatLevel": 9,
+    "wanderRange": 4
+  },
+  {
+    "id": 144,
+    "name": "Desert Snake",
+    "editorLabel": "large desert variant",
+    "examineText": "A massive desert snake hardened by heat and hunger.",
+    "attackable": true,
+    "combatLevel": 40,
+    "wanderRange": 6
+  },
+  {
+    "id": 145,
+    "name": "Blackfang Broodmother",
+    "editorLabel": "Vorass Burrow boss",
+    "examineText": "The ancient matriarch at the heart of Vorass Burrow.",
+    "attackable": true,
+    "combatLevel": 115,
+    "size": 4,
+    "wanderRange": 3
+  },
+  {
+    "id": 146,
+    "name": "Crocodile",
+    "editorLabel": "level 40 crocodile",
+    "examineText": "A heavily armoured predator waiting for something to stray too close.",
+    "attackable": true,
+    "combatLevel": 40,
+    "size": 2,
+    "wanderRange": 4
+  },
+  {
+    "id": 147,
+    "name": "Jungle Snake",
+    "editorLabel": "fat jungle constrictor",
+    "examineText": "A thick-bodied constrictor grown powerful in the jungle heat.",
+    "attackable": true,
+    "combatLevel": 55,
+    "wanderRange": 5
+  },
+  {
+    "id": 148,
+    "name": "Sand Crocodile",
+    "editorLabel": "level 40 dune-camouflaged crocodile",
+    "examineText": "Its broken sand-coloured scales make it almost disappear against the dunes.",
+    "attackable": true,
+    "combatLevel": 40,
+    "size": 2,
+    "wanderRange": 4
+  },
+  {
+    "id": 149,
+    "name": "Giant Rat",
+    "examineText": "A rat grown far beyond anyone's comfort.",
+    "combatLevel": 6,
+    "wanderRange": 3
   }
 ]
